@@ -1,0 +1,404 @@
+﻿{
+    [
+        {
+            "legal_owner": "Rob Paterson",
+            "address": "calle 25 # 32 78",
+            "phone": "6664552",
+            "isActive": False,
+            "id": "676481855",
+            "occupation": "vendedor"
+        },
+        {
+            "legal_owner": "Banning Baumann",
+            "address": "calle 29 # 27 51",
+            "phone": "4280797",
+            "isActive": False,
+            "id": "919074143",
+            "occupation": "musico"
+        },
+        {
+            "legal_owner": "Kefira Poling",
+            "address": "carrera 36 # 63 21",
+            "phone": "3336422",
+            "isActive": True,
+            "id": "964994310",
+            "occupation": "vendedor"
+        },
+        {
+            "legal_owner": "Sharseia Coppage",
+            "address": "carrera 120 # 113 9",
+            "phone": "8153787",
+            "isActive": False,
+            "id": "776969315",
+            "occupation": "vendedor"
+        },
+        {
+            "legal_owner": "Garmond Ta",
+            "address": "calle 30 # 82 5",
+            "phone": "6426812",
+            "isActive": True,
+            "id": "103077519",
+            "occupation": "ingeniero"
+        },
+        {
+            "legal_owner": "Eudora Hedgepeth",
+            "address": "carrera 137 # 122 31",
+            "phone": "4727160",
+            "isActive": False,
+            "id": "379073129",
+            "occupation": "ama de casa"
+        },
+        {
+            "legal_owner": "Primrose Press",
+            "address": "carrera 149 # 10 21",
+            "phone": "9659406",
+            "isActive": True,
+            "id": "149382865",
+            "occupation": "ama de casa"
+        },
+        {
+            "legal_owner": "Thirza Montgomery",
+            "address": "carrera 109 # 32 100",
+            "phone": "8275771",
+            "isActive": True,
+            "id": "137620113",
+            "occupation": "docente"
+        },
+        {
+            "legal_owner": "Enora Tam",
+            "address": "calle 151 # 43 37",
+            "phone": "6009322",
+            "isActive": False,
+            "id": "328295466",
+            "occupation": "contadora"
+        },
+        {
+            "legal_owner": "Melody Nims",
+            "address": "carrera 187 # 10 65",
+            "phone": "4750133",
+            "isActive": False,
+            "id": "845322674",
+            "occupation": "cantante"
+        },
+        {
+            "legal_owner": "Taipa Maynor",
+            "address": "carrera 37 # 67 46",
+            "phone": "2386070",
+            "isActive": False,
+            "id": "822737133",
+            "occupation": "vendedor"
+        },
+        {
+            "legal_owner": "Quentin Melby",
+            "address": "carrera 12 # 193 35",
+            "phone": "9312066",
+            "isActive": False,
+            "id": "287375800",
+            "occupation": "comerciante"
+        },
+        {
+            "legal_owner": "Alonza Morelli",
+            "address": "calle 138 # 171 54",
+            "phone": "2741832",
+            "isActive": True,
+            "id": "727428415",
+            "occupation": "enfermera"
+        },
+        {
+            "legal_owner": "Amity Nall",
+            "address": "calle 45 # 36 20",
+            "phone": "2431856",
+            "isActive": False,
+            "id": "991766810",
+            "occupation": "docente"
+        },
+        {
+            "legal_owner": "Yaksha Youssef",
+            "address": "carrera 11 # 68 85",
+            "phone": "3816994",
+            "isActive": False,
+            "id": "496176419",
+            "occupation": "comerciante"
+        },
+        {
+            "legal_owner": "Norma Upham",
+            "address": "carrera 186 # 83 23",
+            "phone": "2361921",
+            "isActive": False,
+            "id": "984597174",
+            "occupation": "docente"
+        },
+        {
+            "legal_owner": "Barden Hagerman",
+            "address": "calle 135 # 61 56",
+            "phone": "8331303",
+            "isActive": False,
+            "id": "106277813",
+            "occupation": "docente"
+        },
+        {
+            "legal_owner": "Taipa Hermosillo",
+            "address": "calle 74 # 35 43",
+            "phone": "2381745",
+            "isActive": True,
+            "id": "842024913",
+            "occupation": "mesera"
+        },
+        {
+            "legal_owner": "Mawgan Tankersley",
+            "address": "calle 4 # 75 35",
+            "phone": "6350030",
+            "isActive": False,
+            "id": "114982538",
+            "occupation": "leñador"
+        },
+        {
+            "legal_owner": "Ajayi Barna",
+            "address": "carrera 74 # 129 68",
+            "phone": "8717260",
+            "isActive": True,
+            "id": "795486770",
+            "occupation": "agricultor"
+        },
+        {
+            "legal_owner": "Lars Zeng",
+            "address": "carrera 164 # 16 100",
+            "phone": "8274374",
+            "isActive": False,
+            "id": "946656581",
+            "occupation": "ingeniero"
+        },
+        {
+            "legal_owner": "Sahnan McGriff",
+            "address": "carrera 74 # 9 52",
+            "phone": "1836074",
+            "isActive": True,
+            "id": "480172030",
+            "occupation": "funcionaria"
+        },
+        {
+            "legal_owner": "Jesal Benning",
+            "address": "carrera 119 # 69 43",
+            "phone": "5060502",
+            "isActive": False,
+            "id": "824169519",
+            "occupation": "estudiante"
+        },
+        {
+            "legal_owner": "Barnardine Windham",
+            "address": "calle 8 # 198 45",
+            "phone": "5332044",
+            "isActive": True,
+            "id": "637696347",
+            "occupation": "pensionada"
+        },
+        {
+            "legal_owner": "Kerwin Blakney",
+            "address": "calle 147 # 58 99",
+            "phone": "6952189",
+            "isActive": True,
+            "id": "326069075",
+            "occupation": "estudiante"
+        },
+        {
+            "legal_owner": "Piero Solari",
+            "address": "calle 176 # 28 41",
+            "phone": "8088605",
+            "isActive": True,
+            "id": "940736103",
+            "occupation": "comerciante"
+        },
+        {
+            "legal_owner": "Stella Downer",
+            "address": "calle 92 # 113 87",
+            "phone": "5286702",
+            "isActive": True,
+            "id": "468967316",
+            "occupation": "docente"
+        },
+        {
+            "legal_owner": "Amina Antonelli",
+            "address": "calle 29 # 127 79",
+            "phone": "5547759",
+            "isActive": False,
+            "id": "158999945",
+            "occupation": "ama de casa"
+        },
+        {
+            "legal_owner": "Alexandria Proctor",
+            "address": "calle 33 # 179 69",
+            "phone": "1870451",
+            "isActive": False,
+            "id": "237626478",
+            "occupation": "medico"
+        },
+        {
+            "legal_owner": "Gavrie No",
+            "address": "calle 83 # 129 81",
+            "phone": "6568435",
+            "isActive": True,
+            "id": "146618787",
+            "occupation": "medico"
+        },
+        {
+            "legal_owner": "Garmond Martens",
+            "address": "calle 191 # 129 11",
+            "phone": "6426252",
+            "isActive": True,
+            "id": "500457510",
+            "occupation": "conductor"
+        },
+        {
+            "legal_owner": "Caley Sturdevant",
+            "address": "calle 158 # 139 21",
+            "phone": "7857059",
+            "isActive": True,
+            "id": "661694133",
+            "occupation": "mecanico"
+        },
+        {
+            "legal_owner": "Kenyangi Ranger",
+            "address": "calle 115 # 37 95",
+            "phone": "4463069",
+            "isActive": False,
+            "id": "478785198",
+            "occupation": "agricultor"
+        },
+        {
+            "legal_owner": "Kasmira Shaw",
+            "address": "calle 4 # 187 36",
+            "phone": "9024631",
+            "isActive": True,
+            "id": "800424206",
+            "occupation": "cocinera"
+        },
+        {
+            "legal_owner": "Hadden Vaquera",
+            "address": "carrera 49 # 172 82",
+            "phone": "7985506",
+            "isActive": True,
+            "id": "320967973",
+            "occupation": "conductor"
+        },
+        {
+            "legal_owner": "Dietrich Chesser",
+            "address": "calle 125 # 155 66",
+            "phone": "3976736",
+            "isActive": True,
+            "id": "410784399",
+            "occupation": "ingeniero"
+        },
+        {
+            "legal_owner": "Megha Westmoreland",
+            "address": "carrera 164 # 60 44",
+            "phone": "2429727",
+            "isActive": False,
+            "id": "842912973",
+            "occupation": "funcionaria"
+        },
+        {
+            "legal_owner": "Bayard Lett",
+            "address": "calle 68 # 41 14",
+            "phone": "8241265",
+            "isActive": True,
+            "id": "583301280",
+            "occupation": "vendedor"
+        },
+        {
+            "legal_owner": "Viveka Tankersley",
+            "address": "carrera 9 # 104 88",
+            "phone": "7250275",
+            "isActive": True,
+            "id": "412745865",
+            "occupation": "comerciante"
+        },
+        {
+            "legal_owner": "Floriane Rabin",
+            "address": "carrera 75 # 172 10",
+            "phone": "7571958",
+            "isActive": True,
+            "id": "192311402",
+            "occupation": "cocinera"
+        },
+        {
+            "legal_owner": "Zizi Wentworth",
+            "address": "calle 199 # 43 64",
+            "phone": "2871713",
+            "isActive": False,
+            "id": "274138487",
+            "occupation": "estudiante"
+        },
+        {
+            "legal_owner": "Bansari McAlpin",
+            "address": "carrera 173 # 171 44",
+            "phone": "1572252",
+            "isActive": True,
+            "id": "802767076",
+            "occupation": "musico"
+        },
+        {
+            "legal_owner": "Osborn Maughan",
+            "address": "carrera 102 # 177 75",
+            "phone": "4555198",
+            "isActive": False,
+            "id": "516276622",
+            "occupation": "mecanico"
+        },
+        {
+            "legal_owner": "Mariasha Benning",
+            "address": "calle 92 # 192 64",
+            "phone": "5572296",
+            "isActive": False,
+            "id": "849876882",
+            "occupation": "vendedora"
+        },
+        {
+            "legal_owner": "Tanek Sheriff",
+            "address": "calle 30 # 125 4",
+            "phone": "5018122",
+            "isActive": False,
+            "id": "782958341",
+            "occupation": "conductor"
+        },
+        {
+            "legal_owner": "Erek Klem",
+            "address": "carrera 7 # 73 42",
+            "phone": "5320399",
+            "isActive": False,
+            "id": "575851098",
+            "occupation": "abogado"
+        },
+        {
+            "legal_owner": "Shelby Moscoso",
+            "address": "carrera 48 # 140 45",
+            "phone": "6621068",
+            "isActive": False,
+            "id": "267683170",
+            "occupation": "contadora"
+        },
+        {
+            "legal_owner": "Abijah Leveille",
+            "address": "carrera 134 # 128 91",
+            "phone": "6144290",
+            "isActive": False,
+            "id": "954591555",
+            "occupation": "administrador"
+        },
+        {
+            "legal_owner": "Fergal Eckhart",
+            "address": "calle 96 # 101 92",
+            "phone": "8057118",
+            "isActive": False,
+            "id": "240137979",
+            "occupation": "abogado"
+        },
+        {
+            "legal_owner": "Florizel Lett",
+            "address": "carrera 9 # 24 66",
+            "phone": "3822249",
+            "isActive": True,
+            "id": "484710566",
+            "occupation": "docente"
+        }
+    ]
+}
