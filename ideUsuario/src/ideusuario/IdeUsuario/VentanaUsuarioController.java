@@ -66,10 +66,12 @@ public class VentanaUsuarioController implements Initializable {
     @FXML private Label direccionEmpresaLB;
     @FXML private TextField direccionEmpresaTF;
     
-    @FXML private Button boton;
+    @FXML private Button ingresarBT;
+    @FXML private Button limpiarBT;
     
     @FXML private ListView<Cliente> clienteslst;
     
+    private boolean formularioLleno = true;
     private ArrayList<String> errores;
     private ObservableList<Cliente> clientes;
     private ObservableList<Empresa> empresas;
@@ -116,38 +118,53 @@ public class VentanaUsuarioController implements Initializable {
     }
     
     public void validar(){
+        if(!personaNaturalRB.isSelected() && !empresaRB.isSelected()){
+            errores.add("Iniciar llenado del formulario indicando el tipo de cuenta a activar");
+            formularioLleno = false;
+            return;
+        }
         if(documentoIdentidadTF.getText().isEmpty()){
             errores.add("Digitar documento de identidad, sólo números");
+            formularioLleno = false;
         }
         if(nitTF.getText().isEmpty() && empresaRB.isSelected()){
             errores.add("Digitar NIT");
+            formularioLleno = false;
         }
         if(nombreTF.getText().isEmpty()){
             errores.add("Digitar nombre");
+            formularioLleno = false;
         }
         if(direccionTF.getText().isEmpty()){
             errores.add("Digitar direccion de la persona");
+            formularioLleno = false;
         }
         if(numeroContactoTF.getText().isEmpty()){
             errores.add("Digitar número de contacto, sólo números");
+            formularioLleno = false;
         }
         if(ocupacionTF.getText().isEmpty()){
             errores.add("Digitar ocupación de la persona");
+            formularioLleno = false;
         }
         if(nombreEmpresaTF.getText().isEmpty() && empresaRB.isSelected()){
             errores.add("Digitar nombre de la empresa");
+            formularioLleno = false;
         }
         if(sectorComercialTF.getText().isEmpty() && empresaRB.isSelected()){    
             errores.add("Digitar sector comercial de la empresa");
+            formularioLleno = false;
         }
         if(direccionEmpresaTF.getText().isEmpty() && empresaRB.isSelected()){    
             errores.add("Digitar direccion de la empresa");
-    }
+            formularioLleno = false;
+        }
     }
     
     @FXML
     public void guardar(){
-        if(personaNaturalRB.isSelected()){
+        validar();
+        if(personaNaturalRB.isSelected() && formularioLleno == true){
             clientes.add(
                     new Cliente(
                             documentoIdentidadTF.getText(),
@@ -158,7 +175,7 @@ public class VentanaUsuarioController implements Initializable {
                     )
             );
         }
-        if(empresaRB.isSelected()){
+        if(empresaRB.isSelected() && formularioLleno == true){
             empresas.add(
                     new Empresa(
                             documentoIdentidadTF.getText(),
@@ -173,7 +190,6 @@ public class VentanaUsuarioController implements Initializable {
                     )
             );
         }
-        validar();
         if(errores.size() > 0){
             String cadenaErrores = "";
             for(int i = 0; i<errores.size();i++){
@@ -185,11 +201,34 @@ public class VentanaUsuarioController implements Initializable {
             mensaje.setContentText(cadenaErrores);
             mensaje.show();
             errores.clear();
+            formularioLleno = true;
             return;
         }
     }
     
-       
+    @FXML
+    public void limpiar(){
+            documentoIdentidadTF.setText("");
+            nitTF.setText("");
+            nombreTF.setText("");
+            direccionTF.setText("");
+            numeroContactoTF.setText("");
+            ocupacionTF.setText("");
+            nombreEmpresaTF.setText("");
+            sectorComercialTF.setText("");
+            direccionEmpresaTF.setText("");
+            tipoClienteToggleGroup.selectToggle(null);
+            documentoIdentidadTF.setDisable(true);
+            nitTF.setDisable(true);
+            nombreTF.setDisable(true);
+            direccionTF.setDisable(true);
+            numeroContactoTF.setDisable(true);
+            ocupacionTF.setDisable(true);
+            nombreEmpresaTF.setDisable(true);
+            sectorComercialTF.setDisable(true);
+            direccionEmpresaTF.setDisable(true);
+            formularioLleno = true;
+    }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
