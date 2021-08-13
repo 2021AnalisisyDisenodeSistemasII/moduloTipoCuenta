@@ -9,12 +9,52 @@ package Clases;
  *
  * @author Usuario
  */
-public class Persona extends Cliente {
-
-    public Persona(String documentoIdentidad, String telefono, String nombrePersona, String ocupacion, String direccion) {
-        super(documentoIdentidad, telefono, nombrePersona, ocupacion, direccion);
-    }
+public class Persona {
     
+    protected String documentoIdentidad;
+    protected String nombrePersona;
+    protected String direccion;
+    protected String telefono;
+
+    public Persona(String documentoIdentidad, String nombrePersona, String direccion, String telefono) {
+        this.documentoIdentidad = documentoIdentidad;
+        this.nombrePersona = nombrePersona;
+        this.direccion = direccion;
+        this.telefono = telefono;
+    }
+
+    public String getdocumentoIdentidad() {
+        return documentoIdentidad;
+    }
+
+    public void setdocumentoIdentidad(String id) {
+        this.documentoIdentidad = documentoIdentidad;
+    }
+
+    public String getNombrePersona() {
+        return nombrePersona;
+    }
+
+    public void setNombrePersona(String nombre) {
+        this.nombrePersona = nombre;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+   
     
     
 }

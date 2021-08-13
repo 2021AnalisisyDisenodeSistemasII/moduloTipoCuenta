@@ -5,7 +5,7 @@
  */
 package ideusuario.IdeUsuario;
 
-import Clases.Cliente;
+import Clases.PersonaNatural;
 import Clases.Empresa;
 import java.net.URL;
 import java.util.ArrayList;
@@ -69,11 +69,11 @@ public class VentanaUsuarioController implements Initializable {
     @FXML private Button ingresarBT;
     @FXML private Button limpiarBT;
     
-    @FXML private ListView<Cliente> clienteslst;
+    @FXML private ListView<PersonaNatural> clienteslst;
     
     private boolean formularioLleno = true;
     private ArrayList<String> errores;
-    private ObservableList<Cliente> clientes;
+    private ObservableList<PersonaNatural> personasNaturales;
     private ObservableList<Empresa> empresas;
 
     
@@ -165,8 +165,8 @@ public class VentanaUsuarioController implements Initializable {
     public void guardar(){
         validar();
         if(personaNaturalRB.isSelected() && formularioLleno == true){
-            clientes.add(
-                    new Cliente(
+            personasNaturales.add(
+                    new PersonaNatural(
                             documentoIdentidadTF.getText(),
                             nombreTF.getText(),
                             direccionTF.getText(),
@@ -245,9 +245,9 @@ public class VentanaUsuarioController implements Initializable {
         this.nombreEmpresaTF.setDisable(true);
         this.sectorComercialTF.setDisable(true);
         this.direccionEmpresaTF.setDisable(true);
-        clientes = FXCollections.observableArrayList();
+        personasNaturales = FXCollections.observableArrayList();
         empresas = FXCollections.observableArrayList();
-        clienteslst.setItems(clientes);
+        clienteslst.setItems(personasNaturales);
     }
     
 
