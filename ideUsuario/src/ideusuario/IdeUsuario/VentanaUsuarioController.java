@@ -10,6 +10,8 @@ import Clases.Empresa;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -72,6 +74,7 @@ public class VentanaUsuarioController implements Initializable {
     @FXML private ListView<PersonaNatural> clienteslst;
     
     private boolean formularioLleno = true;
+    private String regexNit = "\\d*-\\d{1}$";
     private ArrayList<String> errores;
     private ObservableList<PersonaNatural> personasNaturales;
     private ObservableList<Empresa> empresas;
@@ -118,6 +121,8 @@ public class VentanaUsuarioController implements Initializable {
     }
     
     public void validar(){
+        Pattern pattern = Pattern.compile(regexNit);
+        Matcher matcher = pattern.matcher(nitTF.getText());
         if(!personaNaturalRB.isSelected() && !empresaRB.isSelected()){
             errores.add("Iniciar llenado del formulario indicando el tipo de cuenta a activar");
             formularioLleno = false;
@@ -158,6 +163,28 @@ public class VentanaUsuarioController implements Initializable {
         if(direccionEmpresaTF.getText().isEmpty() && empresaRB.isSelected()){    
             errores.add("Digitar direccion de la empresa");
             formularioLleno = false;
+        }
+        if(!documentoIdentidadTF.getText().isEmpty()){
+            try{
+                Integer.parseInt(documentoIdentidadTF.getText());
+            }
+            catch(NumberFormatException e){
+                errores.add("Digitar sólo números en el campo de documento de identidad");
+                formularioLleno = false;
+            }
+        }
+        if(!matcher.matches() && empresaRB.isSelected()){
+            errores.add("Digitar el campo de NIT en la forma correcta");
+            formularioLleno = false;
+        }
+        if(!numeroContactoTF.getText().isEmpty()){
+            try{
+                Integer.parseInt(numeroContactoTF.getText());
+            }
+            catch(NumberFormatException e){
+                errores.add("Digitar sólo números en el campo de número de contacto");
+                formularioLleno = false;
+            }
         }
     }
     
