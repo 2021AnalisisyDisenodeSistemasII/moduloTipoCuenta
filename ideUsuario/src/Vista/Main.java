@@ -48,7 +48,7 @@ public class Main extends Application {
         }*/
       
         try{//ejecutar la ventana de menu
-        Parent root = FXMLLoader.load(getClass().getResource("VentanaMenuPrincipal.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("MenuWindow.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.setResizable(false);

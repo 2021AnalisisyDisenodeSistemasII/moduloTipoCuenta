@@ -11,6 +11,7 @@ import Modelo.Company;
 import Modelo.CompanyDAO;
 import Modelo.NaturalPerson;
 import Modelo.NaturalPersonDAO;
+import Vista.Main;
 import com.mongodb.MongoClient;
 import java.awt.Insets;
 import java.io.IOException;
@@ -394,6 +395,15 @@ public class RegistrationWindowController implements Initializable {
         });
 
     }
+    
+     public void formatTextNumberNit(TextField text) {//solo numeros y el guion en el campo
+        text.textProperty().addListener((observable, oldValue, newValue) -> {
+            if (!newValue.matches("\\d-*")) {
+                text.setText(newValue.replaceAll("[^\\d-]", ""));
+            }
+        });
+
+    }
 
     public void agregarFormatoCampos() {
         //se asegura que desde el inicio no puedan entrar valores numericos en los campos de texto
@@ -405,7 +415,7 @@ public class RegistrationWindowController implements Initializable {
         //se asegura que solo puedan ingresar numero, letras, #y el
         //se asegura que desde el inicio no puedan entrar valores numericos en los campos de texto
         formatTextNumber(documentoIdentidadTF);
-        formatTextNumber(nitTF);
+        formatTextNumberNit(nitTF);
         formatTextNumber(numeroContactoTF);
 
     }
@@ -508,7 +518,7 @@ public class RegistrationWindowController implements Initializable {
         Button btn = (Button) event.getSource();//obteber el id del botton de registro para saber que escena es y asi cerrarla cuando el registro sea exitoso
 
         try {
-            root = FXMLLoader.load(getClass().getResource("VentanaMenuPrincipal.fxml"));
+            root = FXMLLoader.load(Main.class.getResource("/Vista/MenuWindow.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.setResizable(false);

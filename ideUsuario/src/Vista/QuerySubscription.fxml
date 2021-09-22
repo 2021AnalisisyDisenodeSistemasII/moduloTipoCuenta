@@ -10,12 +10,12 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="395.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UserValidationWindowController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="395.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.QuerySubscriptionController">
    <children>
       <AnchorPane layoutX="-3.0" layoutY="202.0" prefHeight="329.0" prefWidth="399.0" styleClass="background-image" stylesheets="@style.css" />
       <AnchorPane layoutY="140.0" prefHeight="300.0" prefWidth="407.0" styleClass="background-panel" stylesheets="@style.css">
          <children>
-            <Label id="titleregistro" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="128.0" layoutY="16.0" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@style.css" text="Registro">
+            <Label id="titleregistro" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="25.0" layoutY="14.0" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@style.css" text="Consulta Suscripción">
                <font>
                   <Font name="Century Gothic Bold" size="36.0" />
                </font>
@@ -42,7 +42,7 @@
                   <Font name="Franklin Gothic Demi Cond" size="17.0" />
                </font>
             </Label>
-            <Button fx:id="validarBT" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#toggleCamposTexto" prefHeight="34.0" prefWidth="145.0" text="Validar" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <Button fx:id="validarBT" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#toggleCamposTexto" prefHeight="34.0" prefWidth="145.0" text="Consultar" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <font>
                   <Font name="Franklin Gothic Demi Cond" size="18.0" />
                </font>

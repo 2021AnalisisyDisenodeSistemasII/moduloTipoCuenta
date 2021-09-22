@@ -5,6 +5,7 @@
  */
 package Controller;
 
+import Vista.Main;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -40,7 +41,8 @@ public class MenuWindowController implements Initializable {
         Stage stage = new Stage();
         Parent root = null;
         try {
-            root = FXMLLoader.load(getClass().getResource("VentanaValidacionUser.fxml"));//por ahora a esta pero deberia ir a la de validacion de documento antes que al registro
+            
+            root = FXMLLoader.load(Main.class.getResource("/Vista/UserValidationWindow.fxml"));//por ahora a esta pero deberia ir a la de validacion de documento antes que al registro
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.setResizable(false);
@@ -52,5 +54,23 @@ public class MenuWindowController implements Initializable {
         }
 
     }
-    
+
+    @FXML
+    public void abrirVentanaConsultaSuscripcion(ActionEvent event) {
+        Stage stage = new Stage();
+        Parent root = null;
+        try {
+
+            root = FXMLLoader.load(Main.class.getResource("/Vista/QuerySubscription.fxml"));//por ahora a esta pero deberia ir a la de validacion de documento antes que al registro
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show();
+            Stage primaryStage = (Stage) registroBT.getScene().getWindow();
+            primaryStage.close();
+        } catch (IOException ex) {
+            Logger.getLogger(MenuWindowController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }
 }
